@@ -185,8 +185,8 @@ pid.file: /run/kibana/kibana.pid
 
 
 # This section was automatically generated during setup.
-elasticsearch.hosts: ['https://192.168.0.23:9200']
+elasticsearch.hosts: ['https://192.168.56.13:9200']
 elasticsearch.serviceAccountToken: AAEAAWVsYXN0aWMva2liYW5hL2Vucm9sbC1wcm9jZXNzLXRva2VuLTE3NTkzMjE2OTg0ODg6Wk52Y3YyZFRULXlHY3BLZTJUbWJQZw
 elasticsearch.ssl.certificateAuthorities: [/var/lib/kibana/ca_1759321700550.crt]
-xpack.fleet.outputs: [{id: fleet-default-output, name: default, is_default: true, is_default_monitoring: true, type: elasticsearch, hosts: ['https://192.168.0.23:9200'], ca_trusted_fingerprint: 59b56d716824f68fa0e6d856f5f9c2b8810f0d2d1a71c0ebe4b41ad53ca56b75}]
+xpack.fleet.outputs: [{id: fleet-default-output, name: default, is_default: true, is_default_monitoring: true, type: elasticsearch, hosts: ['https://192.168.56.13:9200'], ca_trusted_fingerprint: 59b56d716824f68fa0e6d856f5f9c2b8810f0d2d1a71c0ebe4b41ad53ca56b75}]
 
