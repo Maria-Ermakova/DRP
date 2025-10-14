@@ -15,9 +15,9 @@ unset DEBIAN_FRONTEND
 cp mysqld_source.cnf /etc/mysql/mysql.conf.d/mysqld.cnf
 service mysql restart
 #создадим пользователя реплики и дадим ему права для репликации
-mysql -u root -p "
+mysql -e "
 CREATE USER 'repl'@'%' IDENTIFIED WITH 'caching_sha2_password' BY 'oTUSlave#2020';
 GRANT REPLICATION SLAVE ON *.* TO 'repl'@'%';
 FLUSH PRIVILEGES;"
 #заливаем dump (учебную) бд
-mysql -u root -p -e < world.sql
+mysql < world.sql
