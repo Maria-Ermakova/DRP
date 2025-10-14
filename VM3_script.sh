@@ -36,8 +36,6 @@ echo "-Xms1g
 cp elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
 systemctl daemon-reload
 systemctl enable --now elasticsearch.service
-#устанвливаем пароль в elastic
-echo -e "123456\n123456" | sudo /usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic -i
 
 #замена конфигов и запуск Logstash
 cp logstash.yml /etc/logstash/logstash.yml
