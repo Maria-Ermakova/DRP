@@ -32,6 +32,8 @@ dpkg -i elasticsearch_8.17.1.deb kibana_8.17.1.deb logstash_8.17.1.deb
 #зададим лимит памяти в 1 ГБ
 echo "-Xms1g
 -Xmx1g" | sudo tee /etc/elasticsearch/jvm.options.d/jvm.options > /dev/null
+#замена конфига и запуск Elastic
+cp elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
 systemctl daemon-reload
 systemctl enable --now elasticsearch.service
 #устанвливаем пароль в elastic
