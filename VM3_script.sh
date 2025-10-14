@@ -15,7 +15,7 @@ unset DEBIAN_FRONTEND
 cp mysqld_replica.cnf /etc/mysql/mysql.conf.d/mysqld.cnf
 service mysql restart
 #настройка и запуск GTID репликации
-mysql -u root -p -e "
+mysql -e "
 STOP REPLICA;
 CHANGE REPLICATION SOURCE TO
 SOURCE_HOST='192.168.56.12',
