@@ -4,7 +4,7 @@
 apt update
 
 #установка Apache2 и замена index файла
-apt install apache2
+apt install apache2 -y
 cp index_apache2.html /var/www/html/index.html
 service apache2 restart
 
