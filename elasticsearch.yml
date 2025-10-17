@@ -13,6 +13,6 @@ xpack.security.transport.ssl:
   verification_mode: certificate
   keystore.path: certs/transport.p12
   truststore.path: certs/transport.p12
-cluster.initial_master_nodes: ["elk"]
+cluster.initial_master_nodes: ["VM3"]
 
 http.host: 0.0.0.0
