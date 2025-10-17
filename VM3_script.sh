@@ -28,7 +28,7 @@ START REPLICA;
 #установка пакета JAVA
 apt install default-jdk -y
 #установка пакетов стека логирования ELK
-dpkg -i elasticsearch_8.17.1.deb kibana_8.17.1.deb logstash_8.17.1.deb
+#dpkg -i elasticsearch_8.17.1.deb kibana_8.17.1.deb logstash_8.17.1.deb
 #зададим лимит памяти в 1 ГБ
 echo "-Xms1g
 -Xmx1g" | sudo tee /etc/elasticsearch/jvm.options.d/jvm.options > /dev/null
