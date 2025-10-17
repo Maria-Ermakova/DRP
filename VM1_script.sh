@@ -14,7 +14,7 @@ cp filebeat.yml /etc/filebeat/filebeat.yml
 systemctl restart filebeat
 
 #установка и запуск системы мониторинга 
-apt install prometheus
+apt install prometheus -y
 apt-get install -y adduser libfontconfig1 musl
 dpkg -i grafana_11.2.2.deb
 systemctl daemon-reload
