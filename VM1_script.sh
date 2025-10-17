@@ -4,7 +4,7 @@
 apt update
 
 #установка Nginx и замена конфига 
-apt install nginx
+apt install nginx -y
 cp default /etc/nginx/sites-enabled/default
 service nginx restart
 
